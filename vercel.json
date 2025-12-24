@@ -1,5 +1,12 @@
 {
-  "buildCommand": "hugo --gc --minify",
+  "version": 2,
+  "builds": [
+    {
+      "src": "/",
+      "use": "@vercel/hugo"
+    }
+  ],
   "outputDirectory": "public",
-  "framework": "hugo"
+  "framework": "hugo",
+  "buildCommand": "hugo --gc --minify -b $DEPLOY_URL"
 }
