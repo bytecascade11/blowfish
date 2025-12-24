@@ -2,6 +2,10 @@ disabled = false
 languageCode = "en"
 languageName = "English"
 weight = 1
+
+# IMPORTANT: This fixes the RSS/XML problem on your custom domain
+baseURL = "https://www.bytecascade.online/"   # Change to "https://www.bytecascade.online/" if you use www
+
 title = "ByteCascade"
 description = "ByteCascade Technology Reviews delivers the latest tech news, gadget reviews, Android updates, and in-depth guides."
 
@@ -16,19 +20,13 @@ description = "ByteCascade Technology Reviews delivers the latest tech news, gad
   email = "bytecascade11@gmail.com"
   headline = "Technology Reviews, Android Updates, and In-Depth Guides"
   bio = "I’m Oke Sunday Samuel (most people call me iSamuel). I study Physics & Electronics and write practical, expert technology analysis and insights for real people in Nigeria and beyond."
-  # image = "img/avatar.png"  # Upload your photo to static/img/avatar.png later if you want
+  # image = "/img/avatar.png"  # Upload your photo to static/img/avatar.png if you want it shown
 
   links = [
     { email = "mailto:bytecascade11@gmail.com" },
-    # { link = "https://link-to-some-website.com/" },
-    # { blogger = "https://username.blogspot.com/" },
-    # { github = "https://github.com/username" },
-    # { google = "https://www.google.com/" },
-    # { pinterest = "https://pinterest.com/username" },
-    # { reddit = "https://reddit.com/user/username" },
-    # { telegram = "https://t.me/username" },
-    # { tiktok = "https://tiktok.com/@username" },
-    # { x-twitter = "https://twitter.com/username" },
-    # { whatsapp = "https://wa.me/phone-number" },
-    # { youtube = "https://youtube.com/username" },
+    # Add more links later when ready:
+    # { x-twitter = "https://twitter.com/yourusername" },
+    # { youtube = "https://youtube.com/@yourchannel" },
+    # { telegram = "https://t.me/yourusername" },
+    # { github = "https://github.com/yourusername" },
   ]
