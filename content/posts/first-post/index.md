@@ -8,7 +8,7 @@ author: "iSamuel"
 summary: "Launching ByteCascade – tech news, reviews, Android, AI, Samsung, Apple, and more!"
 
 # Working large hero image
-image: "/images/feature.jpg"
+image: "/images/first-post.jpg"
 ---
 
 # Welcome to ByteCascade!
