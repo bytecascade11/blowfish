@@ -1,40 +1,28 @@
-############################
-# BASIC SITE CONFIGURATION
-############################
+# -- Site Configuration --
+# Refer to the theme docs for more details about each of these parameters.
+# https://blowfish.page/docs/getting-started/
 
-theme = "blowfish"
-baseURL = "https://www.bytecascade.online/"
-title = "ByteCascade"
-languageCode = "en"
+# theme = "blowfish" # UNCOMMENT THIS LINE
+# baseURL = "https://www.bytecascade.online/"
 defaultContentLanguage = "en"
+
+# pluralizeListTitles = "true" # hugo function useful for non-english languages, find out more in  https://gohugo.io/getting-started/configuration/#pluralizelisttitles
 
 enableRobotsTXT = true
 summaryLength = 0
-enableEmoji = true
 
 buildDrafts = false
 buildFuture = false
 
+enableEmoji = true
 
-############################
-# PAGINATION
-############################
+# googleAnalytics = "G-XXXXXXXXX"
 
 [pagination]
   pagerSize = 100
 
-
-############################
-# IMAGE HANDLING
-############################
-
 [imaging]
-  anchor = "Center"
-
-
-############################
-# TAXONOMIES
-############################
+  anchor = 'Center'
 
 [taxonomies]
   tag = "tags"
@@ -42,85 +30,40 @@ buildFuture = false
   author = "authors"
   series = "series"
 
-
-############################
-# SITEMAP (SEO)
-############################
-
 [sitemap]
-  changefreq = "daily"
-  filename = "sitemap.xml"
+  changefreq = 'daily'
+  filename = 'sitemap.xml'
   priority = 0.5
-
-
-############################
-# OUTPUT FORMATS
-############################
-# RSS is NORMAL — do NOT remove it
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
-
-
-############################
-# RELATED CONTENT
-############################
 
 [related]
   threshold = 0
   toLower = false
 
-  [[related.indices]]
-    name = "tags"
-    weight = 100
+    [[related.indices]]
+        name = "tags"
+        weight = 100
 
-  [[related.indices]]
-    name = "categories"
-    weight = 100
+    [[related.indices]]
+        name = "categories"
+        weight = 100
 
-  [[related.indices]]
-    name = "series"
-    weight = 50
+    [[related.indices]]
+        name = "series"
+        weight = 50
 
-  [[related.indices]]
-    name = "authors"
-    weight = 20
+    [[related.indices]]
+        name = "authors"
+        weight = 20
 
-  [[related.indices]]
-    name = "date"
-    weight = 10
+    [[related.indices]]
+        name = "date"
+        weight = 10
 
-  [[related.indices]]
-    applyFilter = false
-    name = "fragmentrefs"
-    type = "fragments"
-    weight = 10
-
-
-############################
-# BLOWFISH PARAMETERS
-############################
-
-[params]
-  description = "ByteCascade is a modern tech blog covering software, web development, tools, and digital insights."
-  colorScheme = "light"
-  defaultAppearance = "light"
-  autoSwitchAppearance = false
-
-  enableSearch = true
-  enableCodeCopy = true
-  enableImageLazyLoading = true
-
-  mainSections = ["posts"]
-
-
-############################
-# HEADER / FOOTER (OPTIONAL)
-############################
-
-[params.header]
-  layout = "fixed"
-
-[params.footer]
-  showCopyright = true
-  showThemeAttribution = false
+    [[related.indices]]
+      applyFilter = false
+      name = 'fragmentrefs'
+      type = 'fragments'
+      weight = 10
