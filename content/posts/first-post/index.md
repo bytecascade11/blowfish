@@ -7,7 +7,7 @@ tags: ["welcome", "tech-blog"]
 author: "iSamuel"
 
 # Working large hero image
-image: "/images/first-postjpg"
+image: "/images/first-post.jpg"
 summary: "Launching ByteCascade – tech news, reviews, Android, AI, Samsung, Apple, and more!"
 ---
 
