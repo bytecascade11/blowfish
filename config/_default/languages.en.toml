@@ -3,32 +3,26 @@ languageCode = "en"
 languageName = "English"
 weight = 1
 title = "ByteCascade"
-description = "Exploring AI tools, tech insights, and modern web development"
+description = "ByteCascade Technology Reviews delivers the latest tech news, gadget reviews, Android updates, and in-depth guides."
 
 [params]
   displayName = "EN"
   isoCode = "en"
   rtl = false
   dateFormat = "2 January 2006"
-  # logo = "img/logo.png"
-  # secondaryLogo = "img/secondary-logo.png"
-  # description = "ByteCascade Technology Reviews delivers the latest tech news, gadget Reviews, Android updates, and in-depth guides to keep you informed and ahead in the digital world."
-  # copyright = "Copy, _right?_ :thinking_face:"
 
-# [params.author]
-#   name = "iSamuel"
-#   email = "bytecascade11@gmail.com"
-#   image = "img/blowfish_logo.png"
-#   imageQuality = 96
-#   headline = "I delivers Technology Reviews, latest tech news, gadget Opinions, Android updates, and in-depth guides to keep you informed and ahead in the digital world."
-#   bio = "I’m Oke Sunday Samuel (most people call me iSamuel). I study Physics & Electronics and write practical, expert technology analysis and insight for real people in Nigeria and beyond.
+[params.author]
+  name = "iSamuel"
+  email = "bytecascade11@gmail.com"
+  headline = "Technology Reviews, Android Updates, and In-Depth Guides"
+  bio = "I’m Oke Sunday Samuel (most people call me iSamuel). I study Physics & Electronics and write practical, expert technology analysis and insights for real people in Nigeria and beyond."
+  # image = "img/avatar.png"  # Optional: add your photo later
 
-"
-#   links = [
-#     { email = "mailto:hello@your_domain.com" },
-#     { link = "https://link-to-some-website.com/" },
-#     { blogger = "https://username.blogspot.com/" },
-#     { github = "https://github.com/username" },
+  links = [
+    { email = "mailto:bytecascade11@gmail.com" },
+   #     { link = "https://link-to-some-website.com/" },
+  #     { blogger = "https://username.blogspot.com/" },
+  #     { github = "https://github.com/username" },
 #     { google = "https://www.google.com/" },
 #     { pinterest = "https://pinterest.com/username" },
 #     { reddit = "https://reddit.com/user/username" },
@@ -37,4 +31,14 @@ description = "Exploring AI tools, tech insights, and modern web development"
 #     { x-twitter = "https://twitter.com/username" },
 #     { whatsapp = "https://wa.me/phone-number" },
 #     { youtube = "https://youtube.com/username" },
-#   ]
+  ]
+
+
+
+
+
+
+
+
+
+
