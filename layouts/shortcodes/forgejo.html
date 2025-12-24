@@ -1,6 +1,5 @@
 {{ $id := delimit (slice "forgejo" (partial "functions/uid.html" .)) "-" }}
 {{- $forgejoURL := print (.Get "server" | default .Site.Params.forgejoDefaultServer) "/api/v1/repos/" (.Get "repo") -}}
-{{- $repoColors := .Site.Data.repoColors -}}
 {{- $forgejoData := dict -}}
 {{- with try (resources.GetRemote $forgejoURL) -}}
   {{- with .Err -}}
@@ -54,10 +53,10 @@
         </div>
       </div>
 
-      {{ $fetchRepo := resources.Get "js/fetch-repo.js" }}
-      {{ with $fetchRepo }}
-        {{ $fetchRepo = (\( fetchRepo | resources.Minify | resources.Fingerprint ( \).Site.Params.fingerprintAlgorithm | default "sha512")) }}
-        <script async type="text/javascript" src="{{ $fetchRepo.RelPermalink }}" integrity="{{ $fetchRepo.Data.Integrity }}" data-repo-url="{{ $forgejoURL }}" data-repo-id="{{ $id }}"></script>
+      {{ $originalFetchRepo := resources.Get "js/fetch-repo.js" }}
+      {{ with $originalFetchRepo }}
+        {{ $processedFetchRepo := \( originalFetchRepo | resources.Minify | resources.Fingerprint ( \).Site.Params.fingerprintAlgorithm | default "sha512") }}
+        <script async type="text/javascript" src="{{ $processedFetchRepo.RelPermalink }}" integrity="{{ $processedFetchRepo.Data.Integrity }}" data-repo-url="{{ $forgejoURL }}" data-repo-id="{{ $id }}"></script>
       {{ end }}
     </a>
   </div>
