@@ -1,9 +1,5 @@
 ---
-title: "News"
-description: "Latest news and updates from the site"
-hero:
-  image: "hero-image.jpg"  # Optional: place image in the same folder
-  style: "background"
+title: "Tech News"
+description: "Latest technology news, updates, and breaking stories on ByteCascade"
+layout: "list"
 ---
-
-Welcome to the News section! Here you'll find all posts categorized as news.
