@@ -56,7 +56,7 @@
 
       {{ $fetchRepo := resources.Get "js/fetch-repo.js" }}
       {{ with $fetchRepo }}
-        {{ $fetchRepo = \( fetchRepo | resources.Minify | resources.Fingerprint ( \).Site.Params.fingerprintAlgorithm | default "sha512") }}
+        {{ $fetchRepo = (\( fetchRepo | resources.Minify | resources.Fingerprint ( \).Site.Params.fingerprintAlgorithm | default "sha512")) }}
         <script async type="text/javascript" src="{{ $fetchRepo.RelPermalink }}" integrity="{{ $fetchRepo.Data.Integrity }}" data-repo-url="{{ $forgejoURL }}" data-repo-id="{{ $id }}"></script>
       {{ end }}
     </a>
