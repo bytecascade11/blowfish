@@ -1,12 +1,12 @@
 # -- Theme Options --
 
-colorScheme = "blowfish"          # Change later to "avocado", "slate", "neon", etc. if you want
+colorScheme = "blowfish"          # Change to "avocado", "slate", "neon", "cherry", "ocean" etc. later if you want
 defaultAppearance = "light"
 autoSwitchAppearance = true
 
 enableA11y = false
 enableSearch = true
-enableCodeCopy = true             # Nice for code snippets in reviews
+enableCodeCopy = true             # Perfect for future code snippets or tutorials
 enableStructuredBreadcrumbs = true
 
 replyByEmail = false
@@ -19,45 +19,45 @@ hotlinkFeatureImage = false
 fingerprintAlgorithm = "sha512"
 
 [header]
-  layout = "basic"
+  layout = "basic"                # You can try "fixed-fill" or "fixed-gradient" later
 
 [footer]
   showMenu = true
   showCopyright = true
-  showThemeAttribution = false     # Optional: hide "Powered by Blowfish" if you prefer
+  showThemeAttribution = false    # Hides "Theme by Blowfish" credit
   showAppearanceSwitcher = true
   showScrollToTop = true
 
 [homepage]
-  layout = "profile"               # Keep "profile" to show your author bio nicely
-  showRecent = true                # ← THIS makes recent posts appear on homepage
-  showRecentItems = 10             # Show up to 10 recent posts
+  layout = "profile"              # Shows your author bio + recent posts nicely
+  showRecent = true               # Shows recent posts on homepage
+  showRecentItems = 10            # Number of recent posts to display
   showMoreLink = true
-  showMoreLinkDest = "/posts/"     # Link to full blog list
-  cardView = true                  # Optional: nicer card layout for recent posts
+  showMoreLinkDest = "/posts/"    # "View all posts" button link
+  cardView = true                 # Recent posts shown as nice cards
   cardViewScreenWidth = false
 
 [article]
   showDate = true
   showAuthor = true
-  showHero = true                  # ← THIS enables large hero images on every post!
-  heroStyle = "big"                # Options: "basic", "big", "background" – "big" is perfect for reviews
+  showHero = true                 # Enables large hero/cover image on every post
+  heroStyle = "big"               # "big" is best for tech reviews (full-width hero)
   showBreadcrumbs = true
   showDraftLabel = true
   showHeadingAnchors = true
   showReadingTime = true
-  showTableOfContents = true       # Great for long reviews
+  showTableOfContents = true      # Auto TOC for long articles
   showWordCount = true
   showZenMode = false
 
 [list]
   showHero = false
-  showSummary = true               # Show excerpt on list pages
-  showCards = true                 # Card style for category/blog lists
-  groupByYear = false              # Cleaner without year grouping
+  showSummary = true              # Shows excerpt on category/blog list pages
+  showCards = true                # Category pages (News, Reviews, etc.) use card layout
+  groupByYear = false             # Cleaner look without year grouping
 
 [sitemap]
-  excludedKinds = ["taxonomy", "term"]
+  excludedKinds = ["taxonomy", "term"]  # Keeps sitemap clean (excludes /tags/ and /categories/)
 
 [taxonomy]
   showTermCount = true
