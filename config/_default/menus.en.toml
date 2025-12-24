@@ -7,37 +7,37 @@
 
 [[main]]
   name = "News"
-  pageRef = "/news"
+  pageRef = "/categories/news"
   weight = 10
 
 [[main]]
   name = "Samsung"
-  pageRef = "/samsung"
+  pageRef = "/categories/samsung"
   weight = 20
 
 [[main]]
   name = "Apple"
-  pageRef = "/apple"
+  pageRef = "/categories/apple"
   weight = 30
 
 [[main]]
   name = "Android"
-  pageRef = "/android"
+  pageRef = "/categories/android"
   weight = 40
 
 [[main]]
   name = "Games"
-  pageRef = "/games"
+  pageRef = "/categories/games"
   weight = 50
 
 [[main]]
   name = "AI"
-  pageRef = "/ai"
+  pageRef = "/categories/ai"
   weight = 60
 
 [[main]]
   name = "Reviews"
-  pageRef = "/reviews"
+  pageRef = "/categories/reviews"
   weight = 70
 
 [[main]]
