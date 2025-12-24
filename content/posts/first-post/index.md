@@ -2,13 +2,14 @@
 title: "Welcome to ByteCascade – My First Post"
 date: 2025-12-24
 draft: false
-categories: ["News", "Reviews"]
+categories: ["news", "reviews"]   # lowercase to match your news.md and reviews.md files
 tags: ["welcome", "tech-blog"]
 author: "iSamuel"
 
-# Large hero image for the top of the post (replace with your own or keep this placeholder)
+# Working large hero image
 image: "https://images.unsplash.com/photo-1519389951293-4e0c775b3f4e?w=1600&h=900&fit=crop"
 
+summary: "Launching ByteCascade – tech news, reviews, Android, AI, Samsung, Apple, and more!"
 ---
 
 # Welcome to ByteCascade!
@@ -21,6 +22,6 @@ Expect honest reviews, practical guides, and real-world tech tips especially use
 
 Stay tuned for in-depth articles coming soon!
 
-What topics would you like to see first? Let me know in the comments (or via email).
+What topics would you like to see first? Let me know via email.
 
 Thanks for visiting! 🚀
