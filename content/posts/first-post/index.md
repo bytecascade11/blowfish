@@ -5,9 +5,10 @@ draft: false
 categories: ["news", "reviews"]   # lowercase to match your news.md and reviews.md files
 tags: ["welcome", "tech-blog"]
 author: "iSamuel"
+summary: "Launching ByteCascade – tech news, reviews, Android, AI, Samsung, Apple, and more!"
 
 # Working large hero image
-image: "/images/feature.jpg
+image: "/images/feature.jpg"
 ---
 
 # Welcome to ByteCascade!
