@@ -24,10 +24,8 @@ As 2025 draws to a close, two smartphones continue to dominate conversations amo
 Released months apart—the iPhone launching in September and the Fold debuting earlier in July—these devices represent **two very different philosophies**. One is the peak evolution of the traditional slab smartphone. The other is a foldable that has finally matured into a practical phone–tablet hybrid.
 
 This comparison isn’t about crowning a universal winner. It’s about exposing the **real-world trade-offs** when you’re spending this much money.
-<img src="/images/iphone-17-pro-max-vs-galaxy-z-fold-7-cover.jpg" alt="test">
 
 ---
-![test](/images/iphone-17-pro-max-vs-galaxy-z-fold-7-cover.jpg)
 
 > **TL;DR**
 >
