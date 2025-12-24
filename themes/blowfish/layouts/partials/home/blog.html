@@ -1,0 +1,16 @@
+{{/* Show posts on Home by categories */}}
+{{ $homeCategories := site.Params.homepage.homeCategories }}
+{{ $allPosts := where .Site.RegularPages "Params.categories" "intersect" $homeCategories }}
+
+{{ range first 5 $allPosts }}
+  <article>
+    <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+    <p>{{ .Summary }}</p>
+    {{ if .Params.featuredImage }}
+      <img src="{{ .Params.featuredImage }}" alt="{{ .Title }}">
+    {{ end }}
+    <p><small>Posted on {{ .Date.Format "Jan 2, 2006" }}</small></p>
+  </article>
+{{ else }}
+  <p>No posts found.</p>
+{{ end }}
