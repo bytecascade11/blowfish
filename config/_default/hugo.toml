@@ -67,3 +67,10 @@ enableEmoji = true
       name = 'fragmentrefs'
       type = 'fragments'
       weight = 10
+
+# -------------------------------
+# Homepage categories configuration
+# -------------------------------
+[params.homepage]
+layout = "blog"
+homeCategories = ["news","reviews","samsung","apple","android","ai","games"]
