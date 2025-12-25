@@ -71,11 +71,7 @@ The OnePlus 15 leads the market by introducing the **Glacier Battery 2.0**, a 6,
 
 ---
 
-<!--
-IMAGE PLACEHOLDER
-File name: iphone-16-pro-max-battery-efficiency.jpg
-Description: Premium smartphone on a minimal desk setup with video playback displayed, emphasizing efficiency and long screen-on time.
--->
+![Premium smartphone on a minimal desk setup with video playback displayed, emphasizing efficiency and long screen-on time](iphone-16-pro-max-battery-efficiency.jpg)
 
 ### iPhone 16 Pro Max — The Efficiency Master
 
@@ -86,12 +82,8 @@ Apple continues to demonstrate that software-hardware integration is one of the 
 - **Best For:** Creators, professionals, and users who value consistency and standby longevity.
 
 ---
-
-<!--
-IMAGE PLACEHOLDER
-File name: galaxy-s25-ultra-battery-ai.jpg
-Description: Large smartphone with stylus placed beside it, showing a productivity-focused screen and battery optimization visuals.
--->
+ 
+![Large smartphone with stylus placed beside it, showing a productivity-focused screen and battery optimization visuals](galaxy-s25-ultra-battery-ai.jpg)
 
 ### Samsung Galaxy S25 Ultra — The Intelligent Optimizer
 
