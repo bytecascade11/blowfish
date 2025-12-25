@@ -8,7 +8,6 @@ topics:
   - technology-analysis
   - nigeria-tech
 ---
-
 # About Me
 **About ByteCascade Technology Reviews — My Story, My Promise**
 
