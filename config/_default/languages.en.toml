@@ -25,8 +25,8 @@ description = "ByteCascade Technology Reviews delivers the latest tech news, gad
   links = [
     { email = "mailto:bytecascade11@gmail.com" },
     # Add more links later when ready:
-    # { x-twitter = "https://twitter.com/yourusername" },
-    # { youtube = "https://youtube.com/@yourchannel" },
+    # { x-twitter = "https://x.com/ByteCascade1" },
+    # { youtube = "https://youtube.com/@bytecascade1?si=bufIL0nGCduayqPo" },
     # { telegram = "https://t.me/yourusername" },
     # { github = "https://github.com/bytecascade11" },
   ]
