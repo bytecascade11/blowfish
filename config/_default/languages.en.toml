@@ -27,6 +27,6 @@ description = "ByteCascade Technology Reviews delivers the latest tech news, gad
     # Add more links later when ready:
     # { x-twitter = "https://x.com/ByteCascade1" },
     # { youtube = "https://youtube.com/@bytecascade1?si=bufIL0nGCduayqPo" },
-    # { telegram = "https://t.me/yourusername" },
+    # { telegram = "https://t.me/bytecascade" },
     # { github = "https://github.com/bytecascade11" },
   ]
