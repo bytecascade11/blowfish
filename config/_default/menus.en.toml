@@ -40,29 +40,34 @@
   pageRef = "/categories/reviews"
   weight = 70
 
-[[main]]
-  name = "About Us"
-  pageRef = "/about"
-  weight = 80
-
-[[main]]
-  name = "Contact Us"
-  pageRef = "/contact"
-  weight = 90
-
 # -- Footer Menu --
+
+[[footer]]
+  name = "Tags"              # First in footer
+  pageRef = "tags"
+  weight = 5
+
+[[footer]]
+  name = "About Us"          # Moved from top menu
+  pageRef = "/about"
+  weight = 10
+
+[[footer]]
+  name = "Contact Us"        # Moved from top menu
+  pageRef = "/contact"
+  weight = 20
 
 [[footer]]
   name = "Privacy Policy"
   pageRef = "/privacy-policy"
-  weight = 10
+  weight = 30
 
 [[footer]]
   name = "Terms and Conditions"
   pageRef = "/terms"
-  weight = 20
+  weight = 40
 
 [[footer]]
   name = "Disclaimer"
   pageRef = "/disclaimer"
-  weight = 30
+  weight = 50
