@@ -59,11 +59,7 @@ Modern LTPO 4.0 OLED panels can dynamically scale refresh rates down to **0.1 Hz
 
 ## 2. The Battery Champions of 2025
 
-<!--
-IMAGE PLACEHOLDER
-File name: oneplus-15-battery-performance.jpg
-Description: Close-up image of a modern smartphone with a large battery icon displayed on-screen, representing extreme battery capacity and fast charging.
--->
+![OnePlus 15 battery performance and fast charging](oneplus-15-battery-performance.jpg)
 
 ### OnePlus 15 — The Capacity King
 
