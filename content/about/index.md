@@ -11,8 +11,6 @@ topics:
 # About Me
 **About ByteCascade Technology Reviews — My Story, My Promise**
 
-![Oke "iSamuel" – Founder & Technology Analyst](isamuel.jpg "Oke Sunday Samuel (iSamuel)")  
-*Oke "iSamuel" (Oke Sunday Samuel) – Founder & Technology Analyst at ByteCascade Technology Opinion*
 
 I’m **Oke Sunday Samuel** (most people call me **iSamuel**). I study Physics & Electronics and write practical, **expert technology analysis and insight** for real people in Nigeria and beyond.
 
