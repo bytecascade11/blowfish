@@ -1,27 +1,29 @@
 ---
-topic: Best Smartphones for Battery Life in 2025
-description: A deep-dive guide comparing the best smartphones for battery life in 2025, powered by Silicon-Carbon batteries, efficient 3nm chipsets, and intelligent software optimization.
+title: "Best Smartphones for Battery Life in 2025"
+description: "A deep-dive guide comparing the best smartphones for battery life in 2025, powered by Silicon-Carbon batteries, efficient 3nm chipsets, and intelligent software optimization."
 date: 2025-12-25
 author: "iSamuel"
 categories:
-  - apple 
-  - reviews 
-  - android
-  - samsung 
+  - Apple
+  - Android
+  - Samsung
+  - Reviews
 tags:
   - battery-life
   - smartphones-2025
   - silicon-carbon-battery
-  - android
   - iphone
+  - android
   - mobile-tech
   - phone-comparison
-    
+draft: false
+---
+<!--
 HERO IMAGE PLACEHOLDER
 File name: best-smartphone-battery-life-2025-hero.jpg
 Description: Editorial-style hero image showing multiple modern flagship smartphones on a desk with battery percentage indicators glowing, symbolizing long battery life. Clean, high-contrast background. No visible branding.
 Google Discover note: Single subject focus, no text overlay, realistic lighting.
----
+-->
 
 # The Definitive Guide: Best Smartphones for Battery Life in 2025
 
