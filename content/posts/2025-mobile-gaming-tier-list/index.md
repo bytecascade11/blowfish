@@ -52,7 +52,7 @@ Genshin remains one of the toughest stress tests for mobile hardware. The ROG Ph
 
 If the ROG Phone is a precision-engineered performance machine, the RedMagic 11 Pro is a purpose-built powerhouse that prioritizes cooling and screen immersion above all else.
 
-![RedMagic 11 Pro full-screen gaming experience](redmagic-11-pro-placeholder.jpg)
+![RedMagic 11 Pro full-screen gaming experience](redmagic-11-pro-placeholder.png)
 
 ### Why It Excels in PUBG Mobile
 
@@ -70,7 +70,7 @@ RedMagic’s Game Space environment allows per-game tuning of CPU, GPU, touch se
 
 Apple continues to take a fundamentally different approach. Rather than chasing extreme hardware additions, the iPhone 17 Pro Max relies on the efficiency of the **A19 Pro** chip and Apple’s tightly controlled software ecosystem.
 
-![iPhone 17 Pro Max Genshin Impact performance](iphone-17-pro-max-placeholder.jpg)
+![iPhone 17 Pro Max Genshin Impact performance](iphone-17-pro-max-placeholder.png)
 
 ### The Genshin Impact Experience
 
@@ -98,7 +98,7 @@ For competitive *PUBG Mobile* players, audio cues are critical. Apple’s tight 
 
 ## Choosing the Right Phone Based on Your Game
 
-![Competitive mobile gaming comparison](mobile-gaming-comparison-placeholder.jpg)
+![Competitive mobile gaming comparison](mobile-gaming-comparison-placeholder.png)
 
 ### If You Play Call of Duty Mobile
 Prioritize **control flexibility and touch responsiveness**. Shoulder triggers and customizable input layouts provide a tangible advantage in movement-heavy gunfights.
