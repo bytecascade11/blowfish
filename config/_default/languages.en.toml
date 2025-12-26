@@ -20,7 +20,7 @@ description = "ByteCascade Technology Reviews delivers the latest tech news, gad
   email = "bytecascade11@gmail.com"
   headline = "Technology Reviews, Android Updates, and In-Depth Guides"
   bio = "I’m Oke Sunday Samuel (most people call me iSamuel). I study Physics & Electronics and write practical, expert technology analysis and insights for real people in Nigeria and beyond."
-  # image = "/img/isamuel.jpg"  # Upload your photo to static/img/isamuel.jpg if you want it shown
+  # image = "/avatar/isamuel.jpg"  # Upload your photo to static/img/isamuel.jpg if you want it shown
 
   links = [
     { email = "mailto:bytecascade11@gmail.com" },
