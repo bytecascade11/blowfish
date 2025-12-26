@@ -50,6 +50,10 @@ fingerprintAlgorithm = "sha512"
   showWordCount = true
   showZenMode = false
 
+  # === Related posts enabled here ===
+  showRelated = true              # Shows "Related articles" section at the bottom of each post
+  relatedLimit = 6                # Number of related posts to display (adjust 3–8 as you like)
+
 [list]
   showHero = false
   showSummary = true              # Shows excerpt on category/blog list pages
