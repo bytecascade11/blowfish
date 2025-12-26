@@ -3,7 +3,8 @@ title: "The 2025 Mobile Gaming Tier List: Dominating CoD, PUBG, and Genshin Impa
 description: "A real-world analysis of the best phones for competitive mobile gaming in 2025, focusing on sustained performance, thermal management, and touch latency."
 pubDate: 2025-12-26
 author: "iSamuel"
-heroimage: "2025-mobile-gaming-hero.jpg"
+heroimage: "2025-mobile-gaming-hero.png"
+A full-screen gaming phone provides a competitive advantage in PUBG Mobile by improving visibility and reducing distractions.
 categories:
   - Apple
   - Android
