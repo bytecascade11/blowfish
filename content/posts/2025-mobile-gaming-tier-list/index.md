@@ -4,7 +4,6 @@ description: "A real-world analysis of the best phones for competitive mobile ga
 pubDate: 2025-12-26
 author: "iSamuel"
 heroimage: "2025-mobile-gaming-hero.png"
-A full-screen gaming phone provides a competitive advantage in PUBG Mobile by improving visibility and reducing distractions.
 categories:
   - Apple
   - Android
