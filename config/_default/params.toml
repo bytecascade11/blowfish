@@ -29,7 +29,7 @@ fingerprintAlgorithm = "sha512"
   showScrollToTop = true
 
 [homepage]
-  layout = "custom"               # ← CHANGED: Enables full custom control
+  layout = "custom"               # Enables custom homepage – content from layouts/partials/home/custom.html
   showRecent = true               # Keeps recent posts
   showRecentItems = 10
   showMoreLink = true
