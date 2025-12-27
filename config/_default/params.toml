@@ -29,38 +29,38 @@ fingerprintAlgorithm = "sha512"
   showScrollToTop = true
 
 [homepage]
-  layout = "page"                 # ← CHANGED: Now "page" so subscription form goes to the bottom
-  showRecent = true               # Shows recent posts on homepage (at the top)
-  showRecentItems = 10            # Number of recent posts to display
+  layout = "custom"               # ← CHANGED: Enables full custom control
+  showRecent = true               # Keeps recent posts
+  showRecentItems = 10
   showMoreLink = true
-  showMoreLinkDest = "/posts/"    # "View all posts" button link
-  cardView = true                 # Recent posts shown as nice cards
+  showMoreLinkDest = "/posts/"
+  cardView = true
   cardViewScreenWidth = false
 
 [article]
   showDate = true
   showAuthor = true
-  showHero = true                 # Enables large hero/cover image on every post
-  heroStyle = "big"               # "big" is best for tech reviews (full-width hero)
+  showHero = true
+  heroStyle = "big"
   showBreadcrumbs = true
   showDraftLabel = true
   showHeadingAnchors = true
   showReadingTime = true
-  showTableOfContents = true      # Auto TOC for long articles
+  showTableOfContents = true
   showWordCount = true
   showZenMode = false
 
-  showRelatedContent = true       # Enables the related articles section
-  relatedContentLimit = 6         # Number of related articles to show
+  showRelatedContent = true
+  relatedContentLimit = 6
 
 [list]
   showHero = false
-  showSummary = true              # Shows excerpt on category/blog list pages
-  showCards = true                # Category pages (News, Reviews, etc.) use card layout
-  groupByYear = false             # Cleaner look without year grouping
+  showSummary = true
+  showCards = true
+  groupByYear = false
 
 [sitemap]
-  excludedKinds = ["taxonomy", "term"]  # Keeps sitemap clean (excludes /tags/ and /categories/)
+  excludedKinds = ["taxonomy", "term"]
 
 [taxonomy]
   showTermCount = true
