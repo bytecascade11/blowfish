@@ -1,74 +1,77 @@
 <!-- Subscription Popup Modal -->
 <div id="subscriptionModal" class="fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center z-50">
-  <div class="bg-white rounded-lg shadow-xl p-8 max-w-md w-full relative">
-    <button onclick="closeModal()" class="absolute top-4 right-4 text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
+  <div class="bg-white dark:bg-gray-800 rounded-lg shadow-2xl p-8 max-w-md w-full mx-4 relative">
+    <button onclick="closeModal()" class="absolute top-4 right-4 text-gray-500 hover:text-gray-900 dark:hover:text-white text-3xl font-bold">&times;</button>
+    
+    <h3 class="text-2xl font-bold text-center mb-6 text-gray-900 dark:text-white">Subscribe to ByteCascade</h3>
+    <p class="text-center text-gray-700 dark:text-gray-300 mb-8">Get the latest tech news, reviews, and comparisons delivered to your inbox!</p>
     
     <div class="followit--follow-form-container" attr-a attr-b attr-c attr-d attr-e attr-f>
-      <!-- Your full existing form HTML here -->
-      <form action="https://api.follow.it/subscription-form/RGMwemhqUXlQMkhlaUdudTFHcnJvbGZWTUZFLzBEdkJLWGthVEJyay9jR1dzM2k1Ym1FRGlVaUlIS2dCY2lGU0tTVDNnMlRtenJLTTFWRHB4QU8xWXpGSlVGY2lXLzJkUTRoanRGMFlDM01QYjN5YzhyUnNvSlpTT1AyOExtRUJ8YnkyNjZOMVhOL2djVGllemE0OXNZQkY5R2xHK3pzWmNJWDVUQ3dqQVE0WT0=/8" method="post">
-        <div class="form-preview" style="background-color: rgb(255, 255, 255); border-style: solid; border-width: 1px; border-color: rgb(204, 204, 204); position: relative;">
-          <div class="preview-heading">
-            <h5 style="font-family: Arial; font-weight: bold; color: rgb(0, 0, 0); font-size: 16px; text-align: center; text-transform: none !important;">
-              Get new posts by email:
-            </h5>
+      <form action="https://api.follow.it/subscription-form/RGMwemhqUXlQMkhlaUdudTFHcnJvbGZWTUZFLzBEdkJLWGthVEJyay9jR1dzM2k1Ym1FRGlVaUlIS2dCY2lGU0tTVDNnMlRtenJLTTFWRHB4QU8xWXpGSlVGY2lXLzJkUTRoanRGMFlDM01QYjN5YzhyUnNvSlpTT1AyOExtRUJ8YnkyNjZOMVhOL2djVGllemE0OXNZQkY5R2xHK3pzWmNJWDVUQ3dqQVE0WT0=/8" method="post" target="_blank">
+        <div class="form-preview" style="background-color: #ffffff; border: 1px solid #cccccc; padding: 20px; border-radius: 8px;">
+          <div class="preview-heading text-center mb-4">
+            <h5 class="text-lg font-bold">Get new posts by email:</h5>
           </div>
-          <div class="preview-input-field">
-            <input type="email" name="email" required placeholder="Enter your email" spellcheck="false" style="font-family: Arial; font-weight: normal; color: rgb(0, 0, 0); font-size: 14px; text-align: center; background-color: rgb(255, 255, 255); text-transform: none !important;">
+          <div class="preview-input-field mb-4">
+            <input type="email" name="email" required placeholder="Enter your email" class="w-full px-4 py-3 border border-gray-300 rounded-lg text-center focus:outline-none focus:border-black">
           </div>
           <div class="preview-submit-button">
-            <button type="submit" style="font-family: Arial; font-weight: bold; color: rgb(255, 255, 255); font-size: 16px; text-align: center; background-color: rgb(0, 0, 0); text-transform: none !important;">
-              Subscribe
-            </button>
+            <button type="submit" class="w-full py-3 bg-black text-white font-bold rounded-lg hover:bg-gray-800 transition">Subscribe</button>
           </div>
         </div>
       </form>
-      <a href="https://follow.it" class="powered-by-line">Powered by <img src="https://follow.it/images/colored-logo.svg" alt="follow.it" height="17px"/></a>
+      <div class="text-center mt-4 text-sm text-gray-600">
+        Powered by <a href="https://follow.it" target="_blank" class="underline">follow.it</a>
+      </div>
     </div>
   </div>
 </div>
 
-<!-- Include your full CSS <style> block here (same as before) -->
+<style>
+/* Keep your original custom CSS here if needed for extra styling */
+.followit--follow-form-container .form-preview {
+  box-shadow: 0 5px 25px rgba(34, 60, 47, 0.25);
+}
+</style>
 
 <script>
-// Function to set cookie (expires in 24 hours)
+// Close modal
+function closeModal() {
+  document.getElementById('subscriptionModal').classList.add('hidden');
+  setCookie('subscriptionPopupShown', 'true', 24); // Show again after 24 hours
+}
+
+// Cookie functions
 function setCookie(name, value, hours) {
   const date = new Date();
   date.setTime(date.getTime() + (hours * 60 * 60 * 1000));
-  document.cookie = name + "=" + value + ";expires=" + date.toGMTString() + ";path=/";
+  document.cookie = name + "=" + value + "; expires=" + date.toUTCString() + "; path=/";
 }
 
-// Check if cookie exists
 function getCookie(name) {
   const nameEQ = name + "=";
   const ca = document.cookie.split(';');
   for(let i = 0; i < ca.length; i++) {
-    let c = ca[i];
-    while (c.charAt(0) === ' ') c = c.substring(1);
-    if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length);
+    let c = ca[i].trim();
+    if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length);
   }
   return null;
 }
 
-// Close modal and set cookie
-function closeModal() {
-  document.getElementById('subscriptionModal').classList.add('hidden');
-  setCookie('subscriptionPopup', 'shown', 24);  // 24 hours
-}
-
-// Show popup if not seen today
-window.onload = function() {
-  if (!getCookie('subscriptionPopup')) {
+// Show popup on load if not shown today
+window.addEventListener('load', function() {
+  if (!getCookie('subscriptionPopupShown')) {
     setTimeout(function() {
       document.getElementById('subscriptionModal').classList.remove('hidden');
-    }, 10000);  // 10-second delay (change to 0 for immediate, or add exit-intent below)
-  }
-};
-
-// Optional: Exit-intent trigger (shows when mouse leaves page)
-document.addEventListener('mouseleave', function() {
-  if (!getCookie('subscriptionPopup')) {
-    document.getElementById('subscriptionModal').classList.remove('hidden');
-    setCookie('subscriptionPopup', 'shown', 24);
+    }, 8000); // 8-second delay – adjust as needed
   }
 });
+
+// Optional: Exit-intent (uncomment if you want)
+// document.addEventListener('mouseout', function(e) {
+//   if (e.clientY < 10 && !getCookie('subscriptionPopupShown')) {
+//     document.getElementById('subscriptionModal').classList.remove('hidden');
+//     setCookie('subscriptionPopupShown', 'true', 24);
+//   }
+// });
 </script>
