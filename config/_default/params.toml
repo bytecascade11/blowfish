@@ -29,8 +29,8 @@ fingerprintAlgorithm = "sha512"
   showScrollToTop = true
 
 [homepage]
-  layout = "page"                 # ← Places recent posts first, custom content (form) at the bottom
-  showRecent = true
+  layout = "custom"               # Enables custom homepage – content from layouts/partials/home/custom.html
+  showRecent = true               # Keeps recent posts
   showRecentItems = 10
   showMoreLink = true
   showMoreLinkDest = "/posts/"
