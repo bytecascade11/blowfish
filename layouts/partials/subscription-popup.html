@@ -1,0 +1,65 @@
+<!-- Subscription Popup Modal -->
+<div id="subscriptionModal" class="fixed inset-0 bg-black bg-opacity-60 hidden flex items-center justify-center z-50 p-4">
+  <div class="bg-white dark:bg-gray-900 rounded-xl shadow-2xl max-w-md w-full relative">
+    <button onclick="closeModal()" class="absolute top-4 right-6 text-3xl text-gray-500 hover:text-gray-800 dark:hover:text-gray-200">&times;</button>
+    
+    <div class="p-8 pt-12 text-center">
+      <h3 class="text-2xl font-bold mb-3">Subscribe to ByteCascade</h3>
+      <p class="text-gray-600 dark:text-gray-400 mb-8">Get the latest tech news, reviews, and comparisons straight to your inbox.</p>
+      
+      <div class="followit--follow-form-container" attr-a attr-b attr-c attr-d attr-e attr-f>
+        <form action="https://api.follow.it/subscription-form/RGMwemhqUXlQMkhlaUdudTFHcnJvbGZWTUZFLzBEdkJLWGthVEJyay9jR1dzM2k1Ym1FRGlVaUlIS2dCY2lGU0tTVDNnMlRtenJLTTFWRHB4QU8xWXpGSlVGY2lXLzJkUTRoanRGMFlDM01QYjN5YzhyUnNvSlpTT1AyOExtRUJ8YnkyNjZOMVhOL2djVGllemE0OXNZQkY5R2xHK3pzWmNJWDVUQ3dqQVE0WT0=/8" method="post">
+          <div class="form-preview" style="background-color: #ffffff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 24px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+            <div class="preview-heading mb-6">
+              <h5 class="text-xl font-bold">Get new posts by email:</h5>
+            </div>
+            <div class="preview-input-field mb-6">
+              <input type="email" name="email" required placeholder="Enter your email" class="w-full px-5 py-4 border border-gray-300 rounded-lg text-center focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent">
+            </div>
+            <div class="preview-submit-button">
+              <button type="submit" class="w-full py-4 bg-black text-white font-bold rounded-lg hover:bg-gray-800 transition duration-200">
+                Subscribe
+              </button>
+            </div>
+          </div>
+        </form>
+        <div class="mt-4 text-sm text-gray-500">
+          Powered by <a href="https://follow.it" target="_blank" class="underline hover:no-underline">follow.it</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// Cookie functions
+function setCookie(name, value, hours) {
+  const d = new Date();
+  d.setTime(d.getTime() + (hours * 60 * 60 * 1000));
+  document.cookie = name + "=" + value + ";expires=" + d.toUTCString() + ";path=/";
+}
+
+function getCookie(name) {
+  const nameEQ = name + "=";
+  const ca = document.cookie.split(';');
+  for(let i = 0; i < ca.length; i++) {
+    let c = ca[i].trim();
+    if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length);
+  }
+  return null;
+}
+
+function closeModal() {
+  document.getElementById('subscriptionModal').classList.add('hidden');
+  setCookie('bytecascade_popup', 'shown', 24);
+}
+
+// Show popup after 10 seconds if not shown today
+window.addEventListener('load', function() {
+  if (!getCookie('bytecascade_popup')) {
+    setTimeout(function() {
+      document.getElementById('subscriptionModal').classList.remove('hidden');
+    }, 10000); // 10 seconds delay
+  }
+});
+</script>
