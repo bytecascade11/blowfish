@@ -29,8 +29,8 @@ fingerprintAlgorithm = "sha512"
   showScrollToTop = true
 
 [homepage]
-  layout = "profile"              # Shows your author bio + recent posts nicely
-  showRecent = true               # Shows recent posts on homepage
+  layout = "page"                 # ← CHANGED: Now "page" so subscription form goes to the bottom
+  showRecent = true               # Shows recent posts on homepage (at the top)
   showRecentItems = 10            # Number of recent posts to display
   showMoreLink = true
   showMoreLinkDest = "/posts/"    # "View all posts" button link
