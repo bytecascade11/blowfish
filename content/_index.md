@@ -2,7 +2,9 @@
 title: "ByteCascade"
 ---
 
-<!-- The profile layout places this content at the bottom, after recent posts -->
+# Latest Tech News & Reviews
+
+Discover the newest in Android, iPhone, Samsung, AI, gaming, and more.
 
 <div class="max-w-2xl mx-auto px-6 text-center my-16">
 
