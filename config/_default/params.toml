@@ -12,7 +12,7 @@ autoSwitchAppearance = true
 enableA11y = false
 enableSearch = true
 enableCodeCopy = false
-enableStructuredBreadcrumbs = false
+enableStructuredBreadcrumbs = true   # ← ENABLED: Fixes Google Search Console breadcrumb structured data
 
 replyByEmail = false
 
@@ -47,6 +47,7 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   cardViewScreenWidth = true    # ← Full-width cards on mobile
   layoutBackgroundBlur = true   # ← Slight blur on background for readability
   disableHeroImageFilter = false
+  showSummary = true            # ← ENABLED: Shows short summary/teaser in homepage recent cards
 
 [article]
   showDate = true
@@ -59,7 +60,7 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   heroStyle = "big"             # ← "big" style (change to "background" if you want full-bleed)
   layoutBackgroundBlur = true
   layoutBackgroundHeaderSpace = true
-  showBreadcrumbs = true        # ← ENABLED: Breadcrumbs on article pages
+  showBreadcrumbs = true        # ← Visible breadcrumbs for users
   showDraftLabel = true
   showEdit = false
   editAppendPath = true
@@ -78,10 +79,10 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   showHero = false
   layoutBackgroundBlur = true
   layoutBackgroundHeaderSpace = true
-  showBreadcrumbs = true        # ← ENABLED: Breadcrumbs on list pages (e.g. /posts/)
-  showSummary = true
-  showViews = false 
-  showLikes = false 
+  showBreadcrumbs = true        # ← Visible breadcrumbs on list pages
+  showSummary = true            # ← ENABLED: Shows short summary/teaser in all list cards
+  showViews = false
+  showLikes = false
   showTableOfContents = false
   showCards = false
   orderByWeight = false
@@ -96,7 +97,7 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
 [taxonomy]
   showTermCount = true
   showHero = false
-  showBreadcrumbs = true        # ← ENABLED: Breadcrumbs on /categories/ and /tags/ pages
+  showBreadcrumbs = true
   showViews = false
   showLikes = false
   showTableOfContents = false
@@ -104,7 +105,7 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
 
 [term]
   showHero = false
-  showBreadcrumbs = true        # ← ENABLED: Breadcrumbs on individual category/tag archive pages
+  showBreadcrumbs = true
   showViews = false
   showLikes = false
   showTableOfContents = false
