@@ -67,3 +67,8 @@
   name = "Disclaimer"
   pageRef = "/disclaimer/"
   weight = 50
+
+  [[footer]]
+  name = "Sitemap"
+  pageRef = "/sitemap/"
+  weight = 80   # Higher than Tags (70) so it appears after
