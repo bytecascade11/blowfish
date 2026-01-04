@@ -38,14 +38,14 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   showScrollToTop = true
 
 [homepage]
-  layout = "profile" # valid options: page, profile, hero, card, background, custom
-  showRecent = false
-  showRecentItems = 5
-  showMoreLink = false
-  showMoreLinkDest = "/posts/"
-  cardView = false
-  cardViewScreenWidth = false
-  layoutBackgroundBlur = false
+  layout = "background"         # ← Geometric abstract background like the demo
+  showRecent = true             # ← Show recent posts
+  showRecentItems = 10          # ← Number of recent posts (adjust as needed)
+  showMoreLink = true           # ← "View all posts" button
+  showMoreLinkDest = "/posts/"  # ← Button link
+  cardView = true               # ← Recent posts as rounded cards
+  cardViewScreenWidth = true    # ← Full-width cards on mobile
+  layoutBackgroundBlur = true   # ← Slight blur on background for readability
   disableHeroImageFilter = false
 
 [article]
@@ -55,7 +55,8 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   showDateOnlyInArticle = false
   showDateUpdated = false
   showAuthor = true
-  showHero = false
+  showHero = true               # ← ENABLED: Large cover/hero image at top of articles
+  heroStyle = "big"             # ← "big" for prominent cover image (try "background" for full-bleed overlay)
   layoutBackgroundBlur = true
   layoutBackgroundHeaderSpace = true
   showBreadcrumbs = false
@@ -67,8 +68,8 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   showPagination = true
   invertPagination = false
   showReadingTime = true
-  showTableOfContents = true      # ← ENABLED: Auto TOC sidebar
-  showTaxonomies = true           # ← ENABLED: Shows tags + categories as colored pill cards
+  showTableOfContents = true
+  showTaxonomies = true         # ← Rounded pill tags + categories
   showAuthorsBadges = false
   showWordCount = true
   showZenMode = false
@@ -85,8 +86,8 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   showCards = false
   orderByWeight = false
   groupByYear = true
-  cardView = false
-  cardViewScreenWidth = false
+  cardView = true               # ← List pages (e.g. /posts/) as cards
+  cardViewScreenWidth = true
   constrainItemsWidth = false
 
 [sitemap]
@@ -99,19 +100,19 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   showViews = false
   showLikes = false
   showTableOfContents = false
-  cardView = true               # ← ENABLED: Category/tag list pages as cards
+  cardView = true
 
 [term]
   showHero = false
   showBreadcrumbs = false
   showViews = false
   showLikes = false
-  showTableOfContents = false   # Keep false (TOC not needed on archive pages)
+  showTableOfContents = false
   groupByYear = false
-  cardView = true               # ← ENABLED: Individual category/tag archives (posts) as cards
-  cardViewScreenWidth = true    # ← Makes cards full-width on mobile/small screens
+  cardView = true
+  cardViewScreenWidth = true
 
-# Analytics sections below (leave as-is unless you want to add analytics)
+# Analytics sections (leave as-is)
 [firebase]
 [fathomAnalytics]
 [umamiAnalytics]
