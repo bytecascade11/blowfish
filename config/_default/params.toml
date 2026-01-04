@@ -99,17 +99,17 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   showViews = false
   showLikes = false
   showTableOfContents = false
-  cardView = false
+  cardView = true               # ← ENABLED: Category/tag list pages as cards
 
 [term]
   showHero = false
   showBreadcrumbs = false
   showViews = false
   showLikes = false
-  showTableOfContents = true
+  showTableOfContents = false   # Keep false (TOC not needed on archive pages)
   groupByYear = false
-  cardView = false
-  cardViewScreenWidth = false
+  cardView = true               # ← ENABLED: Individual category/tag archives (posts) as cards
+  cardViewScreenWidth = true    # ← Makes cards full-width on mobile/small screens
 
 # Analytics sections below (leave as-is unless you want to add analytics)
 [firebase]
