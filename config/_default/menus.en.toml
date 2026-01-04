@@ -39,6 +39,11 @@
 # -- Footer Menu --
 
 [[footer]]
+  name = "Tags"
+  pageRef = "/tags/"
+  weight = 70
+  
+[[footer]]
   name = "About Us"
   pageRef = "/about-us/"
   weight = 10
