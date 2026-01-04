@@ -14,7 +14,12 @@
   name = "Apple"
   pageRef = "/categories/apple/"
   weight = 30
-
+  
+[[main]]
+  name = "Android"
+  pageRef = "/categories/android/"
+  weight = 35
+  
 [[main]]
   name = "AI"
   pageRef = "/categories/ai/"
