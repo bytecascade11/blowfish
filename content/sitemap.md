@@ -6,30 +6,34 @@ draft: false
 
 # Sitemap
 
-A complete overview of all content on ByteCascade.
+Explore all content on ByteCascade.
 
-### Main Pages
+## Main Navigation
 - [Home](/)
-- [All Posts](/posts/)
+- [Posts](/posts/)
 - [Categories](/categories/)
 - [Tags](/tags/)
 
-### Static Pages
+## Information Pages
 {{ range where .Site.RegularPages "Section" "==" "" }}
 - [{{ .Title }}]({{ .Permalink }})
 {{ end }}
 
-### Blog Posts
-{{ range where .Site.RegularPages "Section" "posts" }}
-- [{{ .Title }}]({{ .Permalink }}) — {{ dateFormat "January 2, 2006" .Date }}
+## Latest Articles
+{{ range first 20 (where .Site.RegularPages "Section" "posts") }}
+- [{{ .Title }}]({{ .Permalink }}) <small>{{ dateFormat "Jan 2, 2006" .Date }} • {{ .ReadingTime }} min read</small>
 {{ end }}
 
-### Categories
+{{ if gt (len .Site.RegularPages) 20 }}
+- [View all posts](/posts/)
+{{ end }}
+
+## Categories
 {{ range .Site.Taxonomies.categories }}
-- [{{ .Page.Title }} ({{ .Count }} posts)]({{ .Page.Permalink }})
+- [{{ .Page.Title }}]({{ .Page.Permalink }}) <small>({{ .Count }} articles)</small>
 {{ end }}
 
-### Tags
+## Tags
 {{ range .Site.Taxonomies.tags }}
-- [{{ .Page.Title }} ({{ .Count }} posts)]({{ .Page.Permalink }})
+- [{{ .Page.Title }}]({{ .Page.Permalink }}) <small>({{ .Count }} articles)</small>
 {{ end }}
