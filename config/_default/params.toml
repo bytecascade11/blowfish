@@ -122,3 +122,6 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
 [verification]
 [rssnext]
 [advertisement]
+
+[footer]
+  showThemeAttribution = false
