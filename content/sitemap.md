@@ -6,25 +6,30 @@ draft: false
 
 # Sitemap
 
-A complete list of all pages and posts on ByteCascade.
+A complete overview of all content on ByteCascade.
 
-{{< rawhtml >}}
-<ul>
-  <li><a href="/">Home</a></li>
-  <li><a href="/posts/">All Posts</a></li>
-  <li><a href="/categories/">Categories</a></li>
-  <li><a href="/tags/">Tags</a></li>
-  {{ range .Site.RegularPages }}
-    <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-  {{ end }}
-  {{ range .Site.Sections }}
-    <li><strong>{{ .Title }}</strong>
-      <ul>
-        {{ range .Pages }}
-          <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-        {{ end }}
-      </ul>
-    </li>
-  {{ end }}
-</ul>
-{{< /rawhtml >}}
+### Main Pages
+- [Home](/)
+- [All Posts](/posts/)
+- [Categories](/categories/)
+- [Tags](/tags/)
+
+### Static Pages
+{{ range where .Site.RegularPages "Section" "==" "" }}
+- [{{ .Title }}]({{ .Permalink }})
+{{ end }}
+
+### Blog Posts
+{{ range where .Site.RegularPages "Section" "posts" }}
+- [{{ .Title }}]({{ .Permalink }}) — {{ dateFormat "January 2, 2006" .Date }}
+{{ end }}
+
+### Categories
+{{ range .Site.Taxonomies.categories }}
+- [{{ .Page.Title }} ({{ .Count }} posts)]({{ .Page.Permalink }})
+{{ end }}
+
+### Tags
+{{ range .Site.Taxonomies.tags }}
+- [{{ .Page.Title }} ({{ .Count }} posts)]({{ .Page.Permalink }})
+{{ end }}
