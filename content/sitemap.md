@@ -6,34 +6,29 @@ draft: false
 
 # Sitemap
 
-Explore all content on ByteCascade.
+A complete overview of ByteCascade content.
 
-## Main Navigation
+## Main Pages
 - [Home](/)
 - [Posts](/posts/)
 - [Categories](/categories/)
 - [Tags](/tags/)
 
 ## Information Pages
-{{ range where .Site.RegularPages "Section" "==" "" }}
-- [{{ .Title }}]({{ .Permalink }})
-{{ end }}
-
-## Latest Articles
-{{ range first 20 (where .Site.RegularPages "Section" "posts") }}
-- [{{ .Title }}]({{ .Permalink }}) <small>{{ dateFormat "Jan 2, 2006" .Date }} • {{ .ReadingTime }} min read</small>
-{{ end }}
-
-{{ if gt (len .Site.RegularPages) 20 }}
-- [View all posts](/posts/)
-{{ end }}
+- [About Us](/about-us/)
+- [Contact Us](/contact-us/)
+- [Privacy Policy](/privacy-policy/)
+- [Terms and Conditions](/terms-and-conditions/)
+- [Disclaimer](/disclaimer/)
 
 ## Categories
-{{ range .Site.Taxonomies.categories }}
-- [{{ .Page.Title }}]({{ .Page.Permalink }}) <small>({{ .Count }} articles)</small>
-{{ end }}
+- [News](/categories/news/)
+- [Samsung](/categories/samsung/)
+- [Apple](/categories/apple/)
+- [Android](/categories/android/)
+- [AI](/categories/ai/)
+- [Games](/categories/games/)
+- [Reviews](/categories/reviews/)
 
-## Tags
-{{ range .Site.Taxonomies.tags }}
-- [{{ .Page.Title }}]({{ .Page.Permalink }}) <small>({{ .Count }} articles)</small>
-{{ end }}
+## Sample Posts (Add More Manually As Needed)
+- [The 2025 Mobile Gaming Tier List...](/posts/your-post-slug/)  <!-- Replace with actual slug -->
