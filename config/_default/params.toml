@@ -75,6 +75,8 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   showWordCount = true
   showZenMode = false
 
+  showComments = true           # ← ADDED: Enables the comments section on all articles
+
 [list]
   showHero = false
   layoutBackgroundBlur = true
