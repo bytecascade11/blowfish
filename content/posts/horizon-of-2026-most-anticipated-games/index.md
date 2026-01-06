@@ -28,7 +28,7 @@ By 2026, those constraints are gone.
 
 Studios are now designing games around fast NVMe storage, modern CPUs, real-time physics simulation, and persistent world systems. This shift represents more than visual improvement—it marks a fundamental change in how games are built and experienced.
 
-![2026 next-gen gaming landscape](images/2026-gaming-overview.jpg)
+![2026 next-gen gaming landscape](2026-gaming-overview.jpg)
 
 ---
 
