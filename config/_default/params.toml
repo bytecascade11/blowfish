@@ -120,7 +120,14 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
 [fathomAnalytics]
 [umamiAnalytics]
 [selineAnalytics]
+
 [buymeacoffee]
+  identifier = "bytecascade"
+  globalWidget = true
+  globalWidgetMessage = "Enjoy my content? Buy me a coffee! ☕"
+  globalWidgetColor = "#FFDD00"
+  globalWidgetPosition = "right"
+
 [verification]
 [rssnext]
 [advertisement]
