@@ -38,5 +38,6 @@ Explore all content on ByteCascade.
 - [Welcome to ByteCascade – My First Post](/posts/first-post/) <small>December 24, 2025 • Reading time not shown</small>
 - [iPhone 17 Pro Max vs Galaxy Z Fold 7: The Ultimate 2025 Flagship Showdown](/posts/iphone-17-pro-max-vs-galaxy-z-fold-7/) <small>December 17, 2025 • Reading time not shown</small>
 - [The Architectures of Intelligence: A Deep Dive into the Evolution of GPT (2018–2025)](/posts/architectures-of-intelligence-evolution-of-gpt/) <small>January 1, 2025 • Reading time not shown</small>
+- [The Horizon of 2026: A Definitive Guide to the Year’s Most Anticipated Games](/posts/horizon-of-2026-most-anticipated-games/)
 
 - [View all posts](/posts/)
