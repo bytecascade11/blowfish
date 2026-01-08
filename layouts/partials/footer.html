@@ -6,7 +6,7 @@
     </div>
   {{ end }}
 
-  <!-- Newsletter Subscription Form - Now Left-Aligned -->
+  <!-- Newsletter Subscription Form - Left-Aligned -->
   <section class="max-w-md mx-auto my-12 md:mx-0 md:max-w-sm">
     <h3 class="text-lg font-semibold mb-2">Get new posts by email</h3>
     <p class="text-sm opacity-80 mb-6">Stay updated with the latest tech reviews, guides, and opinions — delivered straight to your inbox.</p>
@@ -36,7 +36,7 @@
     <p class="text-xs opacity-60 mt-4">No spam ever. Unsubscribe anytime.</p>
   </section>
 
-  <!-- Footer Menu Links - Centered -->
+  <!-- Footer Menu Links - Now Left-Aligned -->
   {{ if .Site.Params.footer.showMenu | default true }}
     {{ if .Site.Menus.footer }}
       {{ $onlyIcon := true }}
@@ -47,9 +47,9 @@
         {{ end }}
       {{ end }}
       {{ $navClass := printf "flex flex-row pb-4 text-base font-medium text-neutral-500 dark:text-neutral-400 %s" (cond $onlyIcon "overflow-x-auto py-2" "") }}
-      {{ $ulClass := printf "flex list-none %s" (cond $onlyIcon "flex-row" "flex-col sm:flex-row") }}
-      {{ $liClass := printf "flex mb-1 text-end sm:mb-0 sm:me-7 sm:last:me-0 %s" (cond $onlyIcon "me-4" "") }}
-      <nav class="{{ $navClass }} justify-center my-8">
+      {{ $ulClass := printf "flex list-none flex-wrap %s" (cond $onlyIcon "flex-row" "flex-col sm:flex-row") }}
+      {{ $liClass := printf "flex mb-1 text-start sm:mb-0 sm:me-7 sm:last:me-0 %s" (cond $onlyIcon "me-4" "") }}
+      <nav class="{{ $navClass }} md:justify-start justify-center my-8">
         <ul class="{{ $ulClass }}">
           {{ range .Site.Menus.footer }}
             <li class="{{ $liClass }}">
@@ -72,8 +72,8 @@
     {{ end }}
   {{ end }}
 
-  <!-- Copyright and Theme Attribution - At the Bottom -->
-  <div class="mt-12 pt-8 border-t border-neutral-200 dark:border-neutral-700 flex flex-col sm:flex-row items-start sm:items-center justify-between text-sm text-neutral-500 dark:text-neutral-400">
+  <!-- Copyright and Theme Attribution - At the Bottom, Left-Aligned -->
+  <div class="mt-12 pt-8 border-t border-neutral-200 dark:border-neutral-700 flex flex-col sm:flex-row items-start justify-between text-sm text-neutral-500 dark:text-neutral-400">
     {{ if .Site.Params.footer.showCopyright | default true }}
       <p>
         © 2023–2026 iSamuel
@@ -81,7 +81,7 @@
     {{ end }}
 
     {{ if .Site.Params.footer.showThemeAttribution | default true }}
-      <p class="text-xs mt-4 sm:mt-0">
+      <p class="text-xs mt-4 sm:mt-0 text-left sm:text-right">
         {{ $hugo := printf `<a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
           href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a>`
         }}
