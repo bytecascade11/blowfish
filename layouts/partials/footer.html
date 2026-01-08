@@ -1,5 +1,42 @@
 <footer id="site-footer" class="py-10 print:hidden">
-  {{/* Footer menu */}}
+  <!-- Social Icons (if configured in config.toml) -->
+  {{ if .Site.Params.socialIcons }}
+    <div class="flex justify-center mb-12">
+      {{ partial "social-icons.html" . }}
+    </div>
+  {{ end }}
+
+  <!-- Custom Newsletter Subscription Form -->
+  <section class="max-w-md mx-auto my-12 text-center">
+    <h3 class="text-lg font-semibold mb-2">Get new posts by email</h3>
+    <p class="text-sm opacity-80 mb-6">Stay updated with the latest tech reviews, guides, and opinions — delivered straight to your inbox.</p>
+
+    <form 
+      action="https://api.follow.it/subscription-form/bWZOckxmelNNL2wyVVpERE50M0MxMWVhRC9ON2dBQnBKTEJzTlZJTGNIencrSFYrZVFpQ3FPY211M0dGVVJvZkxoWkcxUjd0TThLYmpMMnJuV1dMN3kzaC9uSkorZXlCYWdEZURrTmkxYW9aRGIxKzBJVW1pQXBVbDNBbGxjM098UDVxajlvNmc3NHYyc2ZJRFp4T1pDRncwNS9hMTBmajBaUlU0L1VrbW9XWT0=/8" 
+      method="post" 
+      target="_blank"
+      class="flex flex-col sm:flex-row gap-3"
+    >
+      <input
+        type="email"
+        name="email"
+        placeholder="Enter your email"
+        required
+        class="flex-1 px-5 py-3 rounded-lg bg-background/80 border border-border focus:border-accent focus:outline-none transition-colors"
+        aria-label="Email address"
+      />
+      <button
+        type="submit"
+        class="px-8 py-3 bg-accent text-foreground font-medium rounded-lg hover:bg-accent/90 transition shadow-md"
+      >
+        Subscribe
+      </button>
+    </form>
+
+    <p class="text-xs opacity-60 mt-4">No spam ever. Unsubscribe anytime.</p>
+  </section>
+
+  <!-- Footer Menu Links -->
   {{ if .Site.Params.footer.showMenu | default true }}
     {{ if .Site.Menus.footer }}
       {{ $onlyIcon := true }}
@@ -12,14 +49,15 @@
       {{ $navClass := printf "flex flex-row pb-4 text-base font-medium text-neutral-500 dark:text-neutral-400 %s" (cond $onlyIcon "overflow-x-auto py-2" "") }}
       {{ $ulClass := printf "flex list-none %s" (cond $onlyIcon "flex-row" "flex-col sm:flex-row") }}
       {{ $liClass := printf "flex mb-1 text-end sm:mb-0 sm:me-7 sm:last:me-0 %s" (cond $onlyIcon "me-4" "") }}
-      <nav class="{{ $navClass }}">
+      <nav class="{{ $navClass }} justify-center">
         <ul class="{{ $ulClass }}">
           {{ range .Site.Menus.footer }}
-            <li class=" {{ $liClass }}">
+            <li class="{{ $liClass }}">
               <a
                 class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2 flex items-center"
                 href="{{ .URL }}"
-                title="{{ .Title }}">
+                title="{{ .Title }}"
+              >
                 {{ if .Pre }}
                   <span {{ if and .Pre .Name }}class="mr-1"{{ end }}>
                     {{ partial "icon.html" .Pre }}
@@ -33,23 +71,21 @@
       </nav>
     {{ end }}
   {{ end }}
-  <div class="flex items-center justify-between">
-    {{/* Copyright */}}
+
+  <!-- Copyright and Theme Attribution - NOW AT THE VERY BOTTOM -->
+  <div class="mt-12 pt-8 border-t border-neutral-200 dark:border-neutral-700 flex flex-col sm:flex-row items-center justify-between text-sm text-neutral-500 dark:text-neutral-400">
     {{ if .Site.Params.footer.showCopyright | default true }}
-      <p class="text-sm text-neutral-500 dark:text-neutral-400">
+      <p>
         {{- with replace .Site.Params.copyright "{ year }" now.Year }}
           {{ . | markdownify }}
         {{- else }}
-          &copy;
-          {{ now.Format "2006" }}
-          {{ .Site.Params.Author.name | markdownify }}
+          &copy; 2023–2026 iSamuel
         {{- end }}
       </p>
     {{ end }}
 
-    {{/* Theme attribution */}}
     {{ if .Site.Params.footer.showThemeAttribution | default true }}
-      <p class="text-xs text-neutral-500 dark:text-neutral-400">
+      <p class="text-xs mt-4 sm:mt-0">
         {{ $hugo := printf `<a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
           href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a>`
         }}
@@ -60,6 +96,8 @@
       </p>
     {{ end }}
   </div>
+
+  <!-- Scripts (kept from original) -->
   {{ if not .Site.Params.disableImageZoom | default true }}
     <script>
       mediumZoom(document.querySelectorAll("img:not(.nozoom)"), {
@@ -69,14 +107,11 @@
       });
     </script>
   {{ end }}
+
   {{ $jsProcess := resources.Get "js/process.js" }}
   {{ $jsProcess = $jsProcess | resources.Minify | resources.Fingerprint (.Site.Params.fingerprintAlgorithm | default "sha512") }}
   <script
     type="text/javascript"
     src="{{ $jsProcess.RelPermalink }}"
     integrity="{{ $jsProcess.Data.Integrity }}"></script>
-  {{/* Extend footer - eg. for extra scripts, etc. */}}
-  {{ if templates.Exists "partials/extend-footer.html" }}
-    {{ partialCached "extend-footer.html" . }}
-  {{ end }}
 </footer>
