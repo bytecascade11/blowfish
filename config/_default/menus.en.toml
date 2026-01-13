@@ -2,37 +2,37 @@
 
 [[main]]
   name = "News"
-  pageRef = "/categories/news/"     # Create this category for news posts
+  pageRef = "categories/news"     # Removed leading and trailing slashes
   weight = 10
 
 [[main]]
   name = "Samsung"
-  pageRef = "/categories/samsung/"
+  pageRef = "categories/samsung"
   weight = 20
 
 [[main]]
   name = "Apple"
-  pageRef = "/categories/apple/"
+  pageRef = "categories/apple"
   weight = 30
   
 [[main]]
   name = "Android"
-  pageRef = "/categories/android/"
+  pageRef = "categories/android"
   weight = 35
   
 [[main]]
   name = "AI"
-  pageRef = "/categories/ai/"
+  pageRef = "categories/ai"
   weight = 40
 
 [[main]]
   name = "Games"
-  pageRef = "/categories/games/"
+  pageRef = "categories/games"
   weight = 50
 
 [[main]]
   name = "Reviews"
-  pageRef = "/categories/reviews/"
+  pageRef = "categories/reviews"
   weight = 60
 
 
