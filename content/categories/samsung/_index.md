@@ -1,4 +1,4 @@
 ---
-title: "Samsung"
+title: Samsung
 description: "Samsung news, reviews, and updates"
 ---
