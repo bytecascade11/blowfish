@@ -30,6 +30,17 @@ This guide breaks down which phones actually dominate when matches last longer t
 > Performance observations in this guide assume maximum in-game graphics settings, high refresh-rate modes where available, and extended gameplay sessions exceeding 90 minutes under warm ambient conditions typical of real-world use.
 
 ---
+<script>
+  atOptions = {
+    'key' : 'c67ffbcffbea90f3002cad6906e6cced',
+    'format' : 'iframe',
+    'height' : 300,
+    'width' : 160,
+    'params' : {}
+  };
+</script>
+<script src="https://www.highperformanceformat.com/c67ffbcffbea90f3002cad6906e6cced/invoke.js"></script>
+
 
 ## 1. The Undisputed King: ASUS ROG Phone 9 Pro
 
