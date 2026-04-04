@@ -20,6 +20,17 @@ The **Tecno Camon 30 Pro** is the clearest expression of that ambition yet.
 On paper, it looks almost too good for its class: a **Sony IMX890 flagship-grade camera sensor**, a **144Hz AMOLED display**, and the powerful **MediaTek Dimensity 8200 Ultimate** chipset. After **two weeks of daily use**, including gaming, photography, video recording, and regular productivity tasks, here’s a deep, honest breakdown of what this phone does right—and where it still falls short.
 
 ---
+<script>
+  atOptions = {
+    'key' : 'c67ffbcffbea90f3002cad6906e6cced',
+    'format' : 'iframe',
+    'height' : 300,
+    'width' : 160,
+    'params' : {}
+  };
+</script>
+<script src="https://www.highperformanceformat.com/c67ffbcffbea90f3002cad6906e6cced/invoke.js"></script>
+
 
 ## Design & Build: A Camera-First Identity
 
